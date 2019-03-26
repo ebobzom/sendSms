@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/welcome.css">
+</head>
+<body>
+    <h1>welcome</h1>
+    <a href="/logout">LOGOUT</a>
+    <div class="sms-container">
+        <form action="/message" method="POST">
+            <input type="tel" name="title" placeholder="Receivers phone number" id="title">
+            <input type="text" name="message" placeholder="enter message here" id="message">
+            <button type="submit">SEND</button>
+        </form>
+    </div>
+
+</body>
+</html>
