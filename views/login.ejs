@@ -7,6 +7,14 @@
     <title>Login</title>
 </head>
 <body>
+    <div class="container">
+        <form action="/login" method="POST">
+            <input type="email" name="email" placeholder="example@email.com" id="email">
+            <input type="password" name="password" placeholder="password" id="password">
+            <button type="submit">Login</button>
+            <span>Don't have an account? <a href="/signup">create one</a></span>
+        </form>
+    </div>
     
 </body>
 </html>
