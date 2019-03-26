@@ -3,7 +3,9 @@ const helmet = require('express');
 const cookieParser = require('cookie-parser');
 const express = require('express');
 const mongoose = require('mongoose');
+
 const connectToMongoDB = require('./config/connectToMongo').connect;
+const appRouter = require('./routes/appRouter').appRouter;
 
 const port = process.env.PORT || 3000;
 
@@ -21,15 +23,12 @@ app.set('view engine','ejs');
 app.set('views', path.join(__dirname,'./views'));
 
 //Routes
-app.get('/', (req,res) => {
-    res.send('login');
-});
+app.use(appRouter);
 
 //connect to mongodb
 connectToMongoDB()
 .then(coonection => console.log('mongoDB connected'))
 .catch( err => console.error('An error happened', err));
-
 
 
 //starting server
