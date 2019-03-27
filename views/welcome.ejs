@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="/css/welcome.css">
 </head>
 <body>
-    <h1>welcome</h1>
+    <h1>welcome <%= firstName %></h1>
     <a href="/logout">LOGOUT</a>
     <div class="sms-container">
         <form action="/message" method="POST">
-            <input type="tel" name="title" placeholder="Receivers phone number" id="title">
-            <input type="text" name="message" placeholder="enter message here" id="message">
-            <button type="submit">SEND</button>
+            <h2>please start phone numbers with country code</h2>
+            <div class="fields">
+                <input type="number" name="phoneNumber" placeholder="Receivers phone number" id="pNumber">
+                <input type="text" name="message" placeholder="enter message here" id="message">
+                <button type="submit">SEND</button>
+            </div>
         </form>
     </div>
 
