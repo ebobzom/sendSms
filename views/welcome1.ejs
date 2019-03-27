@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/welcome.css">
+</head>
+<body>
+    <a href="/logout">LOGOUT</a>
+    <div class="sms-container">
+        <form action="/message" method="POST">
+            <h2>please start phone numbers with country code</h2>
+            <div class="fields">
+                <input type="number" name="title" placeholder="Receivers phone number" id="pNumber">
+                <input type="text" name="message" placeholder="enter message here" id="message">
+                <button type="submit">SEND</button>
+            </div>
+        </form>
+        <p>Message sent succesfully</p>
+    </div>
+
+</body>
+</html>
