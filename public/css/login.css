@@ -82,6 +82,10 @@ button{
     margin-left: 40%;
     margin-right: 20%;
 }
+button:hover{
+    padding: 20px;
+}
+
 a{
     text-decoration: none;
 }
@@ -92,6 +96,11 @@ span{
 }
 #email{
     margin-top: 15px;
+}
+p{
+    text-align-last: center;
+    font-size: 30px;
+    color: red;
 }
 
 /* making it responsive */

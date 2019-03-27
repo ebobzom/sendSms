@@ -46,6 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* My css starts here */
 body{
     background-color:rgb(2, 2, 41);
@@ -86,6 +87,15 @@ form{
     padding: 15px;
     margin-top: 15px;
     border: 2px solid black;
+}
+
+p{
+    text-align-last: center;
+    font-size: 30px;
+    color: red;
+}
+button:hover{
+    padding: 20px;
 }
 
 /* Signup css starts here */
